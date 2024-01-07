@@ -22,7 +22,10 @@ export default function Note({ note }: NoteProps) {
 
   const createdUpdatedAtTimestamp = (
     wasUpdated ? note.updatedAt : note.createdAt
-  ).toDateString();
+  ).toLocaleString("en-US", {
+     "dateStyle": "medium",
+     "timeStyle": "medium",
+  })
 
   return (
     <>

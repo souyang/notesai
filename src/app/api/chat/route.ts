@@ -32,10 +32,10 @@ export async function POST(req: Request) {
       },
     });
 
-    console.log("Relevant notes found: ", relevantNotes);
+    // console.log("Relevant notes found: ", relevantNotes);
 
     const systemMessage: ChatCompletionMessage = {
-      role: "system",
+      role: "assistant",
       content:
         "You are an intelligent note-taking app. You answer the user's question based on their existing notes. " +
         "The relevant notes for this query are:\n" +

@@ -1,8 +1,12 @@
 import { SignUp } from "@clerk/nextjs";
+import constants from "@/lib/constants"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FlowBrain - Sign Up",
+  title: "NotesAI - Sign Up",
+  alternates: {
+    canonical: `${constants.BASE_URL}/sign-up`,
+  }
 };
 
 export default function SignUpPage() {

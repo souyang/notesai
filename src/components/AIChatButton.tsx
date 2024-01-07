@@ -1,4 +1,4 @@
-import { Bot } from "lucide-react";
+import { AiOutlineRobot } from "react-icons/ai";
 import { useState } from "react";
 import AIChatBox from "./AIChatBox";
 import { Button } from "./ui/button";
@@ -9,8 +9,8 @@ export default function AIChatButton() {
   return (
     <>
       <Button onClick={() => setChatBoxOpen(true)}>
-        <Bot size={20} className="mr-2" />
-        AI Chat
+        <AiOutlineRobot size={20} className="mr-2" />
+        AI Note Helper
       </Button>
       <AIChatBox open={chatBoxOpen} onClose={() => setChatBoxOpen(false)} />
     </>

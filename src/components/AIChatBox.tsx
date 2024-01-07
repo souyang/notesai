@@ -2,7 +2,8 @@ import { cn } from "@/lib/utils";
 import { useUser } from "@clerk/nextjs";
 import { Message } from "ai";
 import { useChat } from "ai/react";
-import { Bot, Trash, XCircle } from "lucide-react";
+import { Trash, XCircle } from "lucide-react";
+import { AiOutlineRobot } from "react-icons/ai";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { Button } from "./ui/button";
@@ -74,7 +75,7 @@ export default function AIChatBox({ open, onClose }: AIChatBoxProps) {
           )}
           {!error && messages.length === 0 && (
             <div className="flex h-full items-center justify-center gap-3">
-              <Bot />
+              <AiOutlineRobot />
               Ask the AI a question about your notes
             </div>
           )}
@@ -95,6 +96,7 @@ export default function AIChatBox({ open, onClose }: AIChatBoxProps) {
             onChange={handleInputChange}
             placeholder="Say something..."
             ref={inputRef}
+            className="ml-10"
           />
           <Button type="submit">Send</Button>
         </form>
@@ -119,7 +121,7 @@ function ChatMessage({
         isAiMessage ? "me-5 justify-start" : "ms-5 justify-end",
       )}
     >
-      {isAiMessage && <Bot className="mr-2 shrink-0" />}
+      {isAiMessage && <AiOutlineRobot className="mr-2 shrink-0" />}
       <p
         className={cn(
           "whitespace-pre-line rounded-md border px-3 py-2",

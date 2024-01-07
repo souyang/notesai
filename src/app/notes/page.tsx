@@ -1,10 +1,14 @@
 import Note from "@/components/Note";
+import constants from "@/lib/constants";
 import prisma from "@/lib/db/prisma";
 import { auth } from "@clerk/nextjs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FlowBrain - Notes",
+  title: "NotesAI - Notes",
+  alternates: {
+    canonical: `${constants.BASE_URL}/notes`,
+  }
 };
 
 export default async function NotesPage() {
