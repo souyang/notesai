@@ -19,7 +19,7 @@ export default function Home() {
         </span>
       </div>
       <p className="max-w-prose text-center">
-        An AI-Powered note-taking app helping you maintain your own notes and find answer to your notes using AI.
+        Empower Your Ideas, Unleash the Future: Your AI-Powered Note-Taking Ally, Crafting Notes and Unlocking Answers Seamlessly!
       </p>
       <Button size="lg" asChild>
         <Link href="/notes">Open</Link>
