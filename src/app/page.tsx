@@ -19,8 +19,7 @@ export default function Home() {
         </span>
       </div>
       <p className="max-w-prose text-center">
-        An AI-Powered note-taking app built with OpenAI,
-        Pinecone, Next.js, Shadcn UI, Clerk, and more.
+        An AI-Powered note-taking app helping you maintain your own notes and find answer to your notes using AI.
       </p>
       <Button size="lg" asChild>
         <Link href="/notes">Open</Link>
