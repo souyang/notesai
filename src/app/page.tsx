@@ -18,7 +18,7 @@ export default function Home() {
           NotesAI
         </span>
       </div>
-      <p className="max-w-prose text-center">
+      <p className="max-w-prose text-center p-3 md:p-0">
         Empower Your Ideas, Unleash the Future: Your AI-Powered Note-Taking Ally, Crafting Notes and Unlocking Answers Seamlessly!
       </p>
       <Button size="lg" asChild>
